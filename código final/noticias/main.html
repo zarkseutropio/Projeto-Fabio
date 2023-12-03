@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Notícias Comunitário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <header>
+            <h1>Portal de Notícias Comunitário</h1>
+        </header>
+        <nav>
+            <button id="btnCesupa">Notícias sobre Cesupa</button>
+            <button id="btnUnama">Notícias sobre Unama</button>
+            <button id="btnFibra">Notícias sobre Fibra</button>
+        </nav>
+        <form id="formBusca">
+            <label for="inputBusca">Buscar notícias:</label>
+            <input type="text" id="inputBusca" placeholder="Digite sua busca...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <section id="resultadoBusca"></section>
+
+        <button id="btnAdicionarNoticia">Adicionar Notícia</button>
+
+        <section id="formularioAdicao" class="hidden">
+            <h2>Adicionar Nova Notícia</h2>
+            <form id="formAdicionarNoticia">
+                <label for="inputTitulo">Título:</label>
+                <input type="text" id="inputTitulo" required>
+
+                <label for="inputConteudo">Conteúdo:</label>
+                <textarea id="inputConteudo" required></textarea>
+
+                <label for="inputImagem">URL da Imagem:</label>
+                <input type="url" id="inputImagem" required>
+
+                <label for="selectInstituicao">Instituição:</label>
+                <select id="selectInstituicao" required>
+                    <option value="cesupa">CESUPA</option>
+                    <option value="unama">UNAMA</option>
+                    <option value="fibra">FIBRA</option>
+                </select>
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
